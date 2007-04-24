@@ -10,7 +10,7 @@ Release:    %{release}
 # http://www.mandrivalinux.com/en/cvs.php3
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
-URL:		http://qa.mandriva.com
+URL:		http://wiki.mandriva.com/en/Tools/DrakStats
 Group:		System/Configuration/Packaging
 Requires:	drakxtools >= 10.2, rpmstats >= 0.4-1mdk, perl-SOAP-Lite, perl-URPM
 BuildArch:	noarch
