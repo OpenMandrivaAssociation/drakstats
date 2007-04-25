@@ -1,4 +1,4 @@
-%define version 0.13
+%define version 0.14
 %define name drakstats
 %define release %mkrel 1
 
@@ -61,9 +61,11 @@ rm -rf %{buildroot}
 
 %post
 %{update_menus}
+%{update_icon_cache hicolor}
 
 %postun
 %{clean_menus}
+%{clean_icon_cache hicolor}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
@@ -75,3 +77,6 @@ rm -rf %{buildroot}
 %{_miconsdir}/*.png
 %{_iconsdir}/*.png
 %{_liconsdir}/*.png
+%{_iconsdir}/hicolor/16x16/apps/%{name}.png
+%{_iconsdir}/hicolor/32x32/apps/%{name}.png
+%{_iconsdir}/hicolor/48x48/apps/%{name}.png
