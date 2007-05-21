@@ -69,7 +69,7 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%doc README COPYING
+%doc README
 %{_prefix}/sbin/*
 %{_datadir}/%{name}
 %{_datadir}/applications/mandriva-*.desktop
