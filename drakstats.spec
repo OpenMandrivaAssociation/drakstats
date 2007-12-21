@@ -15,6 +15,7 @@ Group:		System/Configuration/Packaging
 Requires:	drakxtools >= 10.2, rpmstats >= 0.4-1mdk, perl-SOAP-Lite, perl-URPM
 BuildArch:	noarch
 BuildRequires: perl-MDK-Common-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Drakstats is a GUI frontend to rpmstats which retrieves statistics about
