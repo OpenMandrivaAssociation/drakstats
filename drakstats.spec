@@ -36,12 +36,6 @@ rm -rf %{buildroot}
 make PREFIX=%{buildroot} install
 
 #menu
-mkdir -p %{buildroot}%{_menudir}
-cat > %{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}): needs="x11" command="/usr/sbin/%{name}" section="System/Configuration/Packaging" \
-icon="drakstats.png" needs="x11" title="Packages Stats" \
-longtitle="Mandriva Linux packages stats" xdg="true"
-EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-drakstats.desktop << EOF
 [Desktop Entry]
@@ -73,7 +67,6 @@ rm -rf %{buildroot}
 %{_prefix}/sbin/*
 %{_datadir}/%{name}
 %{_datadir}/applications/mandriva-*.desktop
-%{_menudir}/%{name}
 %{_miconsdir}/*.png
 %{_iconsdir}/*.png
 %{_liconsdir}/*.png
