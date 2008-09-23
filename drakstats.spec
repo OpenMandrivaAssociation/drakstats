@@ -1,6 +1,6 @@
 %define version 0.21
 %define name drakstats
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	The Mandriva Linux installed rpm gathering tool
 Name:		%{name}
@@ -44,7 +44,7 @@ Comment=Mandriva Linux packages stats
 Exec=/usr/sbin/%{name}
 Icon=drakstats
 Type=Application
-Categories=GTK;X-MandrivaLinux-System-Configuration-Packaging;Settings;PackageManager;
+Categories=X-MandrivaLinux-CrossDesktop;GTK;System;PackageManager;
 EOF
 
 #install lang
