@@ -1,11 +1,11 @@
 %define version 0.21
 %define name drakstats
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	The Mandriva Linux installed rpm gathering tool
 Name:		%{name}
 Version:	%{version}
-Release:    %{release}
+Release:	%{release}
 #cvs source
 # http://www.mandrivalinux.com/en/cvs.php3
 Source0:	%{name}-%{version}.tar.bz2
@@ -13,6 +13,7 @@ License:	GPL
 URL:		http://wiki.mandriva.com/en/Tools/DrakStats
 Group:		System/Configuration/Packaging
 Requires:	drakxtools >= 10.2, rpmstats >= 0.4-1mdk, perl-SOAP-Lite, perl-URPM
+Requires:	perl-libwww-perl
 BuildArch:	noarch
 BuildRequires: perl-MDK-Common-devel
 BuildRoot:	%{_tmppath}/%{name}-buildroot
