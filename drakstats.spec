@@ -1,4 +1,4 @@
-%define version 0.21
+%define version 0.22
 %define name drakstats
 %define release %mkrel 3
 
