@@ -1,6 +1,6 @@
 %define version 0.23.1
 %define name drakstats
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	The Mandriva Linux installed rpm gathering tool
 Name:		%{name}
