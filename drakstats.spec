@@ -37,8 +37,8 @@ rm -rf %{buildroot}
 make PREFIX=%{buildroot} install
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
-cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-drakstats.desktop << EOF
+mkdir -p %{buildroot}%{_datadir}/applications/
+cat > %{buildroot}%{_datadir}/applications/mandriva-drakstats.desktop << EOF
 [Desktop Entry]
 Name=Packages Stats
 Comment=Mandriva Linux packages stats
