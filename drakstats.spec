@@ -32,7 +32,7 @@ helping the user remove unused software.
 %build
 
 %install
-%makeinstall_std
+make PREFIX=%{buildroot} install
 
 #menu
 mkdir -p %{buildroot}%{_datadir}/applications/
