@@ -1,7 +1,7 @@
 Summary:	The Mandriva Linux installed rpm gathering tool
 Name:		drakstats
 Version:	0.23.2
-Release:	15
+Release:	16
 License:	GPLv2
 Group:		System/Configuration/Packaging
 Url:		http://wiki.mandriva.com/en/Tools/DrakStats
