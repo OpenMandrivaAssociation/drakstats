@@ -10,6 +10,7 @@ Url:		https://wiki.mandriva.com/en/Tools/DrakStats
 Source0:	%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 
+BuildRequires:	make
 BuildRequires:	perl-MDK-Common-devel
 Requires:	drakxtools
 Requires:	perl-libwww-perl
